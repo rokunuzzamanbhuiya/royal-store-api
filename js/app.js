@@ -38,7 +38,7 @@ const addToCart = (id, price) => {
   updatePrice("price", price);
   // call update Tax And Charge amount
   updateTaxAndCharge();
-  // set product counter  value on the  UI
+  // set product counter value on the UI
   document.getElementById("total-Products").innerText = count;
   updateTotal();
 };
@@ -75,7 +75,7 @@ const updateTaxAndCharge = () => {
     setInnerText("total-tax", priceConverted * 0.4);
   }
 };
-//grandTotal update function
+// grandTotal update function
 const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
